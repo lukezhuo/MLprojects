@@ -1,0 +1,1 @@
+•	Image Classifier – uses neural networks to classify images as certain objects, like dogs or cats, implemented with Keras
