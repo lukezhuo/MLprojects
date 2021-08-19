@@ -11,6 +11,11 @@ st.write("""
 Detect if someone has diabetes using machine learning
 """)
 
+def print_reached():
+    print('reached')
+    print('need to step out')
+    
+print_reached()
 image = Image.open("Diabetes.png")
 st.image(image, caption='ML Diabetes Detection', use_column_width=True)
 
@@ -25,6 +30,8 @@ X = df.iloc[:, 0:8].values
 Y = df.iloc[:, -1].values
 
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.25, random_state = 0)
+
+
 
 def get_user_input():
     pregnancies = st.sidebar.slider('pregnancies', 0, 20, 3)
